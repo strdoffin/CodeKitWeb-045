@@ -26,9 +26,9 @@ export default function Home3landing() {
                     className="w-full"
                     src={"/page3/bg1.webp"}
                     alt="bg"
-                    width={100}
+                    width={1920}
                     height={10}
-                    priority
+                    
                 />
             </div>
             <div className="container mx-auto px-6 lg:px-20 py-20 flex items-center justify-center">
@@ -56,9 +56,9 @@ export default function Home3landing() {
                         className="w-full"
                         src={"/page3/bg2.webp"}
                         alt="bg2"
-                        width={120}
+                        width={960}
                         height={10}
-                        priority
+                        
                     />
                 </div>
                 <div className=" flex flex-col justify-center p-12">
