@@ -5,42 +5,42 @@ export default function Sponser() {
             <div className="max-w-6xl mx-auto flex flex-col items-center mt-6">
                 <div className="flex flex-wrap justify-center gap-4">
                     <Image
-                        src="/image/wildwood.svg"
+                        src="/image/wildwood.webp"
                         alt=""
                         width={185}
                         height={132}
                         className=""
                     />
                     <Image
-                        src="/image/applerush.svg"
+                        src="/image/applerush.webp"
                         alt=""
                         width={155}
                         height={102}
                         className=""
                     />
                     <Image
-                        src="/image/logo_3.svg"
+                        src="/image/logo_3.webp"
                         alt=""
                         width={155}
                         height={102}
                         className=""
                     />
                     <Image
-                        src="/image/av-group.svg"
+                        src="/image/av-group.webp"
                         alt=""
                         width={155}
                         height={102}
                         className=""
                     />
                     <Image
-                        src="/image/hard2ignore.svg"
+                        src="/image/hard2ignore.webp"
                         alt=""
                         width={155}
                         height={102}
                         className=""
                     />
                     <Image
-                        src="/image/fairtech.svg"
+                        src="/image/fairtech.webp"
                         alt=""
                         width={155}
                         height={102}

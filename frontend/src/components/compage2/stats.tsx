@@ -38,7 +38,7 @@ export default function Stats() {
         {/* Image Section */}
         <div className="w-full">
           <Image
-            src="/image/meetstats.svg"
+            src="/image/meetstats.webp"
             alt="Team working"
             width={800}
             height={500}

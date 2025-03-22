@@ -6,7 +6,7 @@ export default function Navbar2() {
   return (
     <div className="flex justify-evenly items-center w-full h-32 ">
             <div>
-                <Image src={"/image/logo_ensome.svg"} alt="" width={141} height={46} />
+                <Image src={"/image/logo_ensome.webp"} alt="" width={141} height={46} />
             </div>
             <div>
                 <ul className="flex items-center gap-8 ml-auto text-gray-400">
