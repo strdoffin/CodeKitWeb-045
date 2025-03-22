@@ -432,7 +432,7 @@ export default function Home() {
                         <div className="border-t border-gray-200 w-full mb-10"></div>
 
                         {/* main footer new version */}
-                        <div className="flex justify-between">
+                        <div className="flex justify-between bg-blue-200">
                             <div>
                                 <Image
                                     src="/image/logo_ensome.svg"
@@ -442,39 +442,41 @@ export default function Home() {
                                     className=""
                                 />
                             </div>
-                            <div className="flex gap-10 bg-red-300">
+                            <div className="w-1/2 bg-red-300">
                                 {/* menu footer */}
-                                <div id="1" className="">
-                                    <p className="font-bold text-black">About</p>
-                                    <div>
-                                        <ul>
-                                            <li>Home</li>
-                                            <li>About Us</li>
-                                            <li>Services</li>
-                                            <li>Solutions</li>
-                                        </ul>
+                                <div className="w-full gap-[7rem] flex justify-end">
+                                    <div id="1" className="">
+                                        <p className="font-bold text-black">About</p>
+                                        <div>
+                                            <ul>
+                                                <li>Home</li>
+                                                <li>About Us</li>
+                                                <li>Services</li>
+                                                <li>Solutions</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="2">
-                                    <p className="font-bold text-black">Information</p>
-                                    <div>
-                                        <ul>
-                                            <li>Home</li>
-                                            <li>About Us</li>
-                                            <li>Services</li>
-                                            <li>Solutions</li>
-                                        </ul>
+                                    <div id="2">
+                                        <p className="font-bold text-black">Information</p>
+                                        <div>
+                                            <ul>
+                                                <li>Home</li>
+                                                <li>About Us</li>
+                                                <li>Services</li>
+                                                <li>Solutions</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="3">
-                                    <p className="font-bold text-black">Service</p>
-                                    <div>
-                                        <ul>
-                                            <li>Home</li>
-                                            <li>About Us</li>
-                                            <li>Services</li>
-                                            <li>Solutions</li>
-                                        </ul>
+                                    <div id="3">
+                                        <p className="font-bold text-black">Service</p>
+                                        <div>
+                                            <ul>
+                                                <li>Home</li>
+                                                <li>About Us</li>
+                                                <li>Services</li>
+                                                <li>Solutions</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -482,17 +484,26 @@ export default function Home() {
 
                         {/* doisand  */}
 
+                        <div className="mt-10 pt-6 border-t border-gray-200">
+                            
+                        </div>
+
                         {/* Social media section */}
-                        <div className="mt-10 space-y-6">
-                            <h3 className="text-lg font-medium">Social</h3>
-                            <div className="flex flex-wrap gap-4">
-                                {/* Placeholder divs for social icons */}
-                                <div className="w-8 h-8 rounded-full bg-blue-500"></div>
-                                <div className="w-8 h-8 rounded-full bg-blue-400"></div>
-                                <div className="w-8 h-8 rounded-full bg-blue-600"></div>
-                                <div className="w-8 h-8 rounded-full bg-red-500"></div>
-                                <div className="w-8 h-8 rounded-full bg-gray-500"></div>
-                                <div className="w-8 h-8 rounded-full bg-blue-300"></div>
+                        <div className="flex">
+                            <div>
+                                
+                            </div>
+                            <div className=" space-y-6">
+                                <h3 className="text-lg font-medium">Social</h3>
+                                <div className="flex flex-wrap gap-4">
+                                    {/* Placeholder divs for social icons */}
+                                    <div className="w-8 h-8 rounded-full bg-blue-500"></div>
+                                    <div className="w-8 h-8 rounded-full bg-blue-400"></div>
+                                    <div className="w-8 h-8 rounded-full bg-blue-600"></div>
+                                    <div className="w-8 h-8 rounded-full bg-red-500"></div>
+                                    <div className="w-8 h-8 rounded-full bg-gray-500"></div>
+                                    <div className="w-8 h-8 rounded-full bg-blue-300"></div>
+                                </div>
                             </div>
                         </div>
 
