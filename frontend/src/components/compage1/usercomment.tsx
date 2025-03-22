@@ -1,44 +1,62 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Alex Bern",
-    position: "CEO by PixelPerfect",
-    image: "/image/person2.webp",
+    name: "Yossawat Imjai",
+    position: "CEO by DYD",
+    image: "/profile/dofu.jpg",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
+  },
+  {
+    name: "Sirisak Sueakam",
+    position: "NongFill",
+    image: "/profile/ssiriiji.jpg",
     text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” ",
   },
   {
-    name: "Ruben Chifundo",
-    position: "CEO by NOX",
-    image: "/image/person1.webp",
+    name: "Napon Narkphan",
+    position: "CEO by EOS",
+    image: "/profile/gxnp.jpg",
     text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” ",
   },
-  
+  {
+    name: "Liam Smith",
+    position: "CTO by InnovateX",
+    image: "/image/person2.webp",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
+  },
+  {
+    name: "Emma Johnson",
+    position: "Head of Design at Creatify",
+    image: "/image/person1.webp",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
+  },
 ];
 
 export default function UserComment() {
   const [index, setIndex] = useState(0);
+  const itemsPerPage = 2;
+  const totalSlides = Math.ceil(testimonials.length / itemsPerPage);
 
   const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % testimonials.length);
+    setIndex((prev) => (prev + 1) % totalSlides);
   };
 
   const prevSlide = () => {
-    setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
   return (
-    <div className="container mx-auto px-4 py-12 relative">
-      {/* Title + Navigation */}
+    <div className="container mx-auto px-24 py-40 relative">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-2xl font-bold inline-block">
-          Trusted by the best in the business
-        </h2>
+        <h2 className="text-3xl font-bold border-b-4 ml-10 border-blue-600 inline-block">
+          What our customers say{" "}
+        </h2>{" "}
         <div className="flex space-x-2">
           <button
             onClick={prevSlide}
@@ -55,34 +73,51 @@ export default function UserComment() {
         </div>
       </div>
 
-      {/* Testimonials Grid (2 columns) */}
-      <div className="grid grid-cols-2 gap-6">
-        <AnimatePresence mode="wait">
-          {[0, 1].map((offset) => {
-            const currentIndex = (index + offset) % testimonials.length;
-            return (
-              <motion.div
-                key={currentIndex}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-                className="p-6 bg-white shadow-lg rounded-lg text-center flex flex-col items-center"
-              >
-                <Image
-                  src={testimonials[currentIndex].image}
-                  alt={testimonials[currentIndex].name}
-                  width={80}
-                  height={80}
-                  className="rounded-full mb-4"
-                />
-                <h3 className="font-semibold">{testimonials[currentIndex].name}</h3>
-                <p className="text-gray-500 text-sm">{testimonials[currentIndex].position}</p>
-                <p className="text-gray-600 mt-4">{testimonials[currentIndex].text}</p>
-              </motion.div>
-            );
-          })}
-        </AnimatePresence>
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500"
+          style={{ transform: `translateX(-${index * 100}%)` }}
+        >
+          {Array.from({ length: totalSlides }).map((_, slideIndex) => (
+            <div
+              key={slideIndex}
+              className="grid grid-cols-2 gap-6 min-w-full p-10"
+            >
+              {testimonials
+                .slice(
+                  slideIndex * itemsPerPage,
+                  (slideIndex + 1) * itemsPerPage
+                )
+                .map((testimonial, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.5 }}
+                    className="p-6 bg-white border-1 border-gray-100 shadow-lg rounded-lg flex flex-col"
+                  >
+                    <div className="flex gap-5">
+                      <Image
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        width={80}
+                        height={80}
+                        className="rounded-full mb-4"
+                      />
+                      <div className="flex flex-col justify-center ">
+                        <h3 className="font-semibold">{testimonial.name}</h3>
+                        <p className="text-gray-500 text-sm text-start">
+                          {testimonial.position}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-gray-600 mt-4">{testimonial.text}</p>
+                  </motion.div>
+                ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
