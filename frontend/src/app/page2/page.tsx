@@ -1,12 +1,12 @@
 import BlogSection from "@/components/compage2/blogsection";
 import ContactSection from "@/components/compage2/contactsection";
-import Footer from "@/components/footer";
 import Home2Landing from "@/components/compage2/home2landing";
 import PricingSection from "@/components/compage2/pricingsection";
 import Stats from "@/components/compage2/stats";
 import UserComment from "@/components/compage2/usercomment";
 import Sponser from "@/components/sponser";
 import Navbar2 from "@/components/compage2/navbar2";
+import Footer from "@/components/footer";
 
 export default function HomePage() {
   return (
@@ -20,6 +20,7 @@ export default function HomePage() {
       <Sponser />
       <ContactSection />
       <Footer />
+      
     </div>
   );
 }

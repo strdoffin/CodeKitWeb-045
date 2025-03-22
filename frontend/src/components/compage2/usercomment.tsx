@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -10,37 +10,48 @@ const testimonials = [
     name: "Yossawat Imjai",
     position: "CEO by DYD",
     image: "/profile/dofu.jpg",
-    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?”",
   },
   {
     name: "Sirisak Sueakam",
     position: "NongFill",
     image: "/profile/ssiriiji.jpg",
-    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” ",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?”",
   },
   {
     name: "Napon Narkphan",
     position: "CEO by EOS",
     image: "/profile/gxnp.jpg",
-    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” ",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?”",
   },
   {
     name: "Liam Smith",
     position: "CTO by InnovateX",
-    image: "/image/person2.webp",
-    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
+    image: "/profile/liam.jpg",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?”",
   },
   {
     name: "Emma Johnson",
     position: "Head of Design at Creatify",
-    image: "/image/person1.webp",
-    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
+    image: "/profile/emma.jpg",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?”",
   },
 ];
 
 export default function UserComment() {
   const [index, setIndex] = useState(0);
-  const itemsPerPage = 2;
+  const [itemsPerPage, setItemsPerPage] = useState(1);
+
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      setItemsPerPage(window.innerWidth >= 1280 ? 2 : 1);
+    };
+
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
+
   const totalSlides = Math.ceil(testimonials.length / itemsPerPage);
 
   const nextSlide = () => {
@@ -52,28 +63,28 @@ export default function UserComment() {
   };
 
   return (
-    <div className="container mx-auto px-24 py-40 relative">
+    <div className="container mx-auto px-6 py-20 max-w-screen-lg relative">
+      {/* Header & Navigation */}
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold border-b-4 ml-10 border-blue-600 inline-block">
-          What our customers say{" "}
-        </h2>{" "}
+        <h2 className="text-3xl md:text-4xl font-bold">What our customers say</h2>
         <div className="flex space-x-2">
           <button
             onClick={prevSlide}
-            className="p-3 bg-gray-200 rounded-full hover:bg-gray-300 transition"
+            className="p-2 md:p-3 bg-gray-200 rounded-full hover:bg-gray-300 transition"
           >
             <ArrowLeft size={20} />
           </button>
           <button
             onClick={nextSlide}
-            className="p-3 bg-gray-200 rounded-full hover:bg-gray-300 transition"
+            className="p-2 md:p-3 bg-gray-200 rounded-full hover:bg-gray-300 transition"
           >
             <ArrowRight size={20} />
           </button>
         </div>
       </div>
 
-      <div className="overflow-hidden">
+      {/* Testimonial Cards */}
+      <div className="overflow-hidden flex justify-center">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${index * 100}%)` }}
@@ -81,13 +92,10 @@ export default function UserComment() {
           {Array.from({ length: totalSlides }).map((_, slideIndex) => (
             <div
               key={slideIndex}
-              className="grid grid-cols-2 gap-6 min-w-full p-10"
+              className="flex flex-col xl:grid xl:grid-cols-2 gap-6 min-w-full p-4 items-center"
             >
               {testimonials
-                .slice(
-                  slideIndex * itemsPerPage,
-                  (slideIndex + 1) * itemsPerPage
-                )
+                .slice(slideIndex * itemsPerPage, (slideIndex + 1) * itemsPerPage)
                 .map((testimonial, idx) => (
                   <motion.div
                     key={idx}
@@ -95,21 +103,19 @@ export default function UserComment() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
-                    className="p-6 bg-white border-1 border-gray-100 shadow-lg rounded-lg flex flex-col"
+                    className="p-6 bg-white border border-gray-200 shadow-lg rounded-lg flex flex-col max-w-xl mx-auto"
                   >
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 items-center">
                       <Image
                         src={testimonial.image}
                         alt={testimonial.name}
                         width={80}
                         height={80}
-                        className="rounded-full mb-4"
+                        className="rounded-full"
                       />
-                      <div className="flex flex-col justify-center ">
+                      <div>
                         <h3 className="font-semibold">{testimonial.name}</h3>
-                        <p className="text-gray-500 text-sm text-start">
-                          {testimonial.position}
-                        </p>
+                        <p className="text-gray-500 text-sm">{testimonial.position}</p>
                       </div>
                     </div>
                     <p className="text-gray-600 mt-4">{testimonial.text}</p>
