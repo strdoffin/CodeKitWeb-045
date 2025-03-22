@@ -15,14 +15,14 @@ export default function Stat3() {
                                 <p className="text-balance text-gray-400">At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.</p>
                             </div>
                             <div className="bg-white h-60 p-5">
-                                <ChartNoAxesCombined size={40} className="text-[#185CFF]"  />
+                                <KeyRound size={40} className="text-[#185CFF]"  />
                                 <p className="text-2xl mb-4 font-semibold">Access control</p>
                                 <p className="text-balance text-gray-400">At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.</p>
                             </div>
                         </div>
                         <div className=" flex flex-col gap-5">
                             <div className="bg-white h-60 mt-10 p-5">
-                                <KeyRound size={40} className="text-[#185CFF]"  />
+                                <ChartNoAxesCombined size={40} className="text-[#185CFF]"  />
                                 <p className="text-2xl mb-4 font-semibold">Embed analytics</p>
                                 <p className="text-balance text-gray-400">At vero eos et accusamus et iusto odio dignissimos duciu quili blandit praesentium voluptatum ipsa quae ab illo.</p>
                             </div>
