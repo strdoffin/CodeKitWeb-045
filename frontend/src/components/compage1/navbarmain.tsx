@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Sponser from "../sponser";
 import Link from "next/link";
 import { CirclePlay } from "lucide-react";
 import Dropdown from "../compage3/dropdown";

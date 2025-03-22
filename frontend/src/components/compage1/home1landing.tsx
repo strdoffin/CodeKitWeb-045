@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Navbar from "@/components/navbar";
 import { CirclePlay } from 'lucide-react';
 export default function Home1landing() {
     return (

@@ -5,13 +5,11 @@ import PricingSection from "@/components/compage2/pricingsection";
 import Stats from "@/components/compage2/stats";
 import UserComment from "@/components/compage2/usercomment";
 import Sponser from "@/components/sponser";
-import Navbar2 from "@/components/compage2/navbar2";
 import Footer from "@/components/footer";
 
 export default function HomePage() {
   return (
     <div>
-      <Navbar2 />
       <Home2Landing />
       <Stats />
       <UserComment />

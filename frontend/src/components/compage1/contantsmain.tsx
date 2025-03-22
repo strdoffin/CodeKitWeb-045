@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function Contactsmain() {
     return (
         <section className="py-20 bg-blue-50">

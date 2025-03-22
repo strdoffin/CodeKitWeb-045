@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Dropdown() {
     const navlist = [
-        { name: "Home1", hlink: "/page1" },
+        { name: "Home1", hlink: "/" },
         { name: "Home2", hlink: "/page2" },
         { name: "Home3", hlink: "/page3" },
     ];

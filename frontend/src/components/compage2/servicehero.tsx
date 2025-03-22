@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServicesHero() {
     return (
       <section className="relative bg-[#002B4E] py-16 px-12 text-white">
@@ -6,7 +8,7 @@ export default function ServicesHero() {
         <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div>
             <nav className="text-sm text-gray-400">
-              <a href="/" className="hover:text-gray-300">Home</a> <span className="mx-2">|</span>
+              <Link href="/" className="hover:text-gray-300">Home</Link> <span className="mx-2">|</span>
               <span className="text-white">Services</span>
             </nav>
             <h1 className="text-4xl md:text-5xl font-bold mt-2 text-white pt-24">Services</h1>
