@@ -400,7 +400,7 @@ export default function Home() {
             </section>
 
             {/* Footer Section */}
-            <div className="w-full bg-blue-600 py-16 px-4 md:px-8">
+            <div className="w-full bg-blue-600 md:px-8">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between">
                     <div className="mb-8 md:mb-0 md:max-w-xl">
                         <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">
@@ -423,7 +423,97 @@ export default function Home() {
                 </div>
             </div>
 
-            
+            {/* footer */}
+            <div className="w-full bg-white md:px-8">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between">
+                    <footer className="w-full bg-white py-10 px-4 md:px-8 lg:px-16">
+                        {/* Horizontal line */}
+                        <div className="border-t border-gray-200 w-full mb-10"></div>
+
+                        {/* main footer new version */}
+                        <div className="flex justify-between">
+                            <div>
+                                <Image
+                                    src="/image/logo_ensome.svg"
+                                    alt=""
+                                    width={150}
+                                    height={49}
+                                    className=""
+                                />
+                            </div>
+                            <div className="flex gap-4">
+                                {/* menu footer */}
+                                <div id="1" className="">
+                                    <p className="font-bold text-black">About</p>
+                                    <div>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>About Us</li>
+                                            <li>Services</li>
+                                            <li>Solutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="2">
+                                    <p className="font-bold text-black">Information</p>
+                                    <div>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>About Us</li>
+                                            <li>Services</li>
+                                            <li>Solutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="3">
+                                <p className="font-bold text-black">Service</p>
+                                    <div>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>About Us</li>
+                                            <li>Services</li>
+                                            <li>Solutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* doisand  */}
+
+                        {/* Social media section */}
+                        <div className="mt-10 space-y-6">
+                            <h3 className="text-lg font-medium">Social</h3>
+                            <div className="flex flex-wrap gap-4">
+                                {/* Placeholder divs for social icons */}
+                                <div className="w-8 h-8 rounded-full bg-blue-500"></div>
+                                <div className="w-8 h-8 rounded-full bg-blue-400"></div>
+                                <div className="w-8 h-8 rounded-full bg-blue-600"></div>
+                                <div className="w-8 h-8 rounded-full bg-red-500"></div>
+                                <div className="w-8 h-8 rounded-full bg-gray-500"></div>
+                                <div className="w-8 h-8 rounded-full bg-blue-300"></div>
+                            </div>
+                        </div>
+
+                        {/* Bottom section with privacy policy and terms */}
+                        <div className="mt-10 pt-6 border-t border-gray-200">
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                                <div className="flex space-x-6 mb-4 md:mb-0">
+                                    <a href="#" className="text-sm text-gray-600 hover:text-blue-500 flex items-center">
+                                        Privacy policy
+                                        <span className="ml-2">→</span>
+                                    </a>
+                                    <a href="#" className="text-sm text-gray-600 hover:text-blue-500 flex items-center">
+                                        Terms of us
+                                        <span className="ml-2">→</span>
+                                    </a>
+                                </div>
+                                <p className="text-sm text-gray-500">© 2022 Ensome. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         </div>
     </div>
   );
