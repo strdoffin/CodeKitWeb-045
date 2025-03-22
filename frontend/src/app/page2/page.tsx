@@ -6,7 +6,6 @@ export default function HomePage() {
         <div>
             <Home2Landing />
             <Stats />
-            <div>P'Tob C.. IT</div>
         </div>
     );
 }
