@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CirclePlay } from "lucide-react";
 import Dropdown from './dropdown';
 const navlist =[
-    {name : "Home1",hlink : "/page1"},
+    {name : "Home1",hlink : "/"},
     {name : "Home2",hlink : "/page2"},
     {name : "Home3",hlink : "/page3"},
 ]
