@@ -4,9 +4,9 @@ import Link from "next/link"
 import Image from "next/image"
 export default function Navbar2() {
   return (
-    <div className="flex justify-evenly items-center w-full h-32 bg-[#0B1E38]">
+    <div className="hidden bg-[#0B1E38] xl:flex justify-evenly items-center w-full h-32">
             <div>
-                <Image src={"/image/logo_ensome.webp"} alt="" width={141} height={46} />
+                <Image src={"/image/logo_ensome.webp"} alt="logo" width={141} height={46} />
             </div>
             <div>
                 <ul className="flex items-center gap-8 ml-auto text-white">
