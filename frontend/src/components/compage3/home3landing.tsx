@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Sponser from "../sponser";
 import Link from "next/link";
-import { ChevronDown, CirclePlay, AlignJustify } from "lucide-react";
+import { CirclePlay } from "lucide-react";
+import Dropdown from './dropdown';
+const navlist =[
+    {name : "Home1",hlink : "/page1"},
+    {name : "Home2",hlink : "/page2"},
+    {name : "Home3",hlink : "/page3"},
+]
 export default function Home3landing() {
+
     return (
         <div>
             <div className="px-5 lg:px-60">
@@ -15,28 +22,13 @@ export default function Home3landing() {
                             height={46}
                         />
                     </div>
-                    <div className="hidden xl:block">
+                    <div className="hidden lg:block">
                         <ul className="flex items-center gap-8 ml-auto text-gray-400">
-                            <li>
-                                <button className="text-black">Home</button>
-                            </li>
-                            <li>
-                                <Link href={"/"}>Solutions</Link>
-                            </li>
-                            <li>
-                                <button className="flex items-center gap-2">
-                                    Pages <ChevronDown size={20} />
-                                </button>
-                            </li>
-                            <li>
-                                <button>Elements</button>
-                            </li>
-                            <li>
-                                <button>Blog</button>
-                            </li>
-                            <li>
-                                <button>Contacts</button>
-                            </li>
+                            {navlist.map((v,index)=>(
+                                <li key={index}>
+                                    <Link href={v.hlink} className="hover:text-black">{v.name}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -44,13 +36,9 @@ export default function Home3landing() {
                         <CirclePlay size={20} />
                         <p>Watch the demo</p>
                     </button>
-
-                    <button className="xl:hidden">
-                        <AlignJustify
-                            size={30}
-                            color="#185CFF"
-                        />
-                    </button>
+                    <div className="xl:hidden z-50 relative">
+                        <Dropdown />
+                    </div>
                 </div>
             </div>
             <div className="px-5 lg:px-60 mt-10">
@@ -101,9 +89,9 @@ export default function Home3landing() {
                     <div className="flex flex-col items-start gap-4">
                         <p className="mt-4 text-gray-400">
                             Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem
-                            aperiam, eaque ipsa quae ab illo inventore veritatis et
-                            quasi architecto.
+                            voluptatem accusantium doloremque laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto.
                         </p>
                         <div className="w-full lg:w-fit text-center bg-blue-500 px-6 py-3 rounded-md text-white gap-2 ">
                             <p>Discover more</p>

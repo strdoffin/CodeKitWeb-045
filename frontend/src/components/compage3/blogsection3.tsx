@@ -9,21 +9,21 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const blogPosts = [
     {
         id: 1,
-        title: "Staffing software: key capabilities and top products",
+        title: "ISO 13485 compliance of medical devices",
         date: "22 June 2022",
         image: "/image/notebook.webp",
         link: "#",
     },
     {
         id: 2,
-        title: "2022 software development trends explained with benefits",
+        title: "Business analysis helps you  in finance",
         date: "22 June 2022",
         image: "/image/paper.webp",
         link: "#",
     },
     {
         id: 3,
-        title: "Business analysis helps you in finance",
+        title: "5 web portal examples your business can learn from",
         date: "22 June 2022",
         image: "/image/team.webp",
         link: "#",
@@ -123,6 +123,7 @@ export default function BlogSection3() {
                                                 <h2 className="text-lg font-semibold mt-1">
                                                     {post.title}
                                                 </h2>
+                                                <p className="text-gray-400">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...</p>
                                                 <Link
                                                     href={post.link}
                                                     className="text-blue-600 font-medium mt-2 inline-flex items-center hover:underline"
