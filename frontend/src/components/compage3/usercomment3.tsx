@@ -7,33 +7,33 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Alex Bern",
-    position: "CEO by PixelPerfect",
-    image: "/images/alex.jpg",
-    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-  },
-  {
-    name: "Ruben Chifundo",
-    position: "CEO by NOX",
-    image: "/images/ruben.jpg",
-    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-  },
-  {
     name: "Yossawat Imjai",
+    position: "CEO by DYD",
+    image: "/profile/dofu.jpg",
+    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+  },
+  {
+    name: "Sirisak Sueakam",
+    position: "NongFill",
+    image: "/profile/ssiriiji.jpg",
+    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+  },
+  {
+    name: "Napon Narkphan",
     position: "CEO by EOS",
-    image: "/images/ruben.jpg" ,
+    image: "/profile/gxnp.jpg" ,
     text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
   },
   {
     name: "Liam Smith",
     position: "CTO by InnovateX",
-    image: "/images/liam.jpg",
+    image: "/profile/liam.jpg",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     name: "Emma Johnson",
     position: "Head of Design at Creatify",
-    image: "/images/emma.jpg",
+    image: "/profile/emma.jpg",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   }
 ];

@@ -1,6 +1,8 @@
 import { CirclePlay } from "lucide-react"
 import Image from 'next/image';
 import Navbar from "@/components/navbar"
+import Usercomment from './../../components/compage1/usercomment';
+
 
 export default function Home() {
   return (
@@ -293,69 +295,8 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Testimonials Section */}
-                <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-800">
-                            Trusted by the best<br />in the business
-                        </h2>
-
-                        <div className="flex space-x-4">
-                            <button className="bg-white hover:bg-gray-100 p-3 rounded-md shadow-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                                </svg>
-                            </button>
-                            <button className="bg-white hover:bg-gray-100 p-3 rounded-md shadow-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {/* Testimonial 1 */}
-                        <div className="bg-white rounded-lg shadow-sm p-8">
-                            <div className="mb-6">
-                                {/* Placeholder for profile image */}
-                                <div className="w-16 h-16 rounded-full bg-gray-200 mb-6"></div>
-
-                                <p className="text-gray-600 mb-4">
-                                    "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-                                    ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
-                                    velit esse quam nihil molestiae consequatur, vel illum."
-                                </p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold">Alex Bern</p>
-                                <p className="text-gray-500 text-sm">CEO by PixelPerfect</p>
-                            </div>
-                        </div>
-
-                        {/* Testimonial 2 */}
-                        <div className="bg-white rounded-lg shadow-sm p-8">
-                            <div className="mb-6">
-                                {/* Placeholder for profile image */}
-                                <div className="w-16 h-16 rounded-full bg-gray-200 mb-6"></div>
-
-                                <p className="text-gray-600 mb-4">
-                                    "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-                                    ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
-                                    velit esse quam nihil molestiae consequatur, vel illum."
-                                </p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold">Alex Bern</p>
-                                <p className="text-gray-500 text-sm">CEO by NOX</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Usercomment/>
+                
             </div>
 
             {/* Statistics Section */}
