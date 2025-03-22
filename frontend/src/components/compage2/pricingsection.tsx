@@ -35,7 +35,6 @@ export default function PricingSection() {
 
   return (
     <section className="container mx-auto px-24 py-40">
-      {/* Title + Toggle Button */}
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block">
           Our pricing
@@ -60,7 +59,6 @@ export default function PricingSection() {
         </div>
       </div>
 
-      {/* Pricing Grid */}
       <div className="grid md:grid-cols-3 gap-6">
         {plans.map((plan) => (
           <motion.div

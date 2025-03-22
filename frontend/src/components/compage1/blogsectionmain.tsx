@@ -4,7 +4,6 @@ export default function Blogsectionmain() {
         <div>
             <section className="bg-gray-50 py-20 h-[100vh]">
                 <div className="max-w-6xl mx-auto px-6">
-                    {/* Title */}
                     <h2 className="text-3xl font-bold text-gray-900 text-center">
                         Why our clients choose Ensome?
                     </h2>
@@ -13,9 +12,7 @@ export default function Blogsectionmain() {
                         beatae vitae dicta sunt explicabo.
                     </p>
 
-                    {/* Feature Cards */}
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {/* Card 1 */}
                         <div className="bg-white shadow-lg rounded-lg p-6">
                             <div className="flex items-center justify-center h-12 w-12 bg-blue-100 rounded-lg">
                                 <Image
@@ -32,7 +29,6 @@ export default function Blogsectionmain() {
                             </p>
                         </div>
 
-                        {/* Card 2 */}
                         <div className="bg-white shadow-lg rounded-lg p-6">
                             <div className="flex items-center justify-center h-12 w-12 bg-blue-100 rounded-lg">
                                 <Image
@@ -49,7 +45,6 @@ export default function Blogsectionmain() {
                             </p>
                         </div>
 
-                        {/* Card 3 */}
                         <div className="bg-white shadow-lg rounded-lg p-6">
                             <div className="flex items-center justify-center h-12 w-12 bg-blue-100 rounded-lg">
                                 <Image

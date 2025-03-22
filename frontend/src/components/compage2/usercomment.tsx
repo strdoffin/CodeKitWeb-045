@@ -64,7 +64,6 @@ export default function UserComment() {
 
   return (
     <div className="container mx-auto px-6 py-20 max-w-screen-lg relative">
-      {/* Header & Navigation */}
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl md:text-4xl font-bold">What our customers say</h2>
         <div className="flex space-x-2">
@@ -83,7 +82,6 @@ export default function UserComment() {
         </div>
       </div>
 
-      {/* Testimonial Cards */}
       <div className="overflow-hidden flex justify-center">
         <div
           className="flex transition-transform duration-500"

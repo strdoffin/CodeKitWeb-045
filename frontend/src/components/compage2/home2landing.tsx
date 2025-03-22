@@ -4,9 +4,7 @@ export default function Home2Landing() {
   return (
     <div>
       <div className="bg-[#0B1E38] text-white">
-        {/* Hero Section */}
         <div className="container mx-auto px-6  flex flex-col py-10 xl:flex-row items-center justify-between gap-12 2xl:px-52">
-          {/* Left Section */}
           <div className="max-w-xl text-center xl:text-left">
             <h1 className="text-3xl xl:text-4xl font-bold">
               Find true power in your data with Ensome
@@ -18,7 +16,6 @@ export default function Home2Landing() {
             </p>
           </div>
 
-          {/* Right Section */}
           <div className="flex flex-col items-center xl:items-start gap-4 w-1/3">
             <p className="hidden xl:block text-gray-300">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -37,10 +34,8 @@ export default function Home2Landing() {
           </div>
         </div>
 
-        {/* Content Section */}
         <div className="bg-white text-black py-20">
           <div className="container mx-auto max-w-screen-xl px-6 xl:px-12 2xl:px-24 grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
-            {/* Left Column */}
             <div className="hidden xl:flex flex-col gap-6">
               <h2 className="text-3xl font-bold">
                 The newest business analytics platform
@@ -80,7 +75,6 @@ export default function Home2Landing() {
               </button>
             </div>
 
-            {/* Right Column */}
             <div>
               <Image
                 src="/image/group1.webp"

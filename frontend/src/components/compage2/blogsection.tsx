@@ -8,7 +8,7 @@ const blogPosts = [
     id: 1,
     title: "Staffing software: key capabilities and top products",
     date: "22 June 2022",
-    image: "/image/notebook.webp", // เปลี่ยนเป็น path รูปจริง
+    image: "/image/notebook.webp",
     link: "#",
   },
   {
@@ -30,12 +30,10 @@ const blogPosts = [
 export default function BlogSection() {
   return (
     <section className="container mx-auto px-24 py-40">
-      {/* Title */}
       <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block mb-8">
         Ensome blog
       </h2>
 
-      {/* Blog Grid */}
       <div className="grid md:grid-cols-3 gap-6">
         {blogPosts.map((post) => (
           <motion.div

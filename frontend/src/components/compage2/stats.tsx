@@ -17,7 +17,6 @@ const benefits = [
 export default function Stats() {
   return (
     <div className="container mx-auto px-24 gap-8 py-40">
-      {/* Statistics Section */}
       <div className="col-span-12 space-y-6 pb-24">
         <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block ml-7">
           Ensome in numbers
@@ -35,7 +34,6 @@ export default function Stats() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Image Section */}
         <div className="w-full">
           <Image
             src="/image/meetstats.webp"
@@ -46,7 +44,6 @@ export default function Stats() {
           />
         </div>
 
-        {/* Benefits Section */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block">
             The benefits of Ensome

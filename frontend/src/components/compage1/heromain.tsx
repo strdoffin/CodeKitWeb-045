@@ -2,15 +2,9 @@ import Image from "next/image";
 export default function Heromain() {
     return (
         <div className="bg-gray-50">
-            {/* Hero Section */}
             <div className="bg-white mt-7 lg:mt-0">
                 <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-[25vh] md:mt-[15vh] lg:mt-0">
-                    {/* Hero Section */}
                     <div className="flex flex-col-reverse md:flex-row gap-12 items-center mb-24">
-                        {/* รูปภาพจะขึ้นก่อนข้อความใน Mobile */}
-
-
-                        {/* ข้อความ */}
                         <div className="md:w-1/2">
                             <h1 className="text-4xl font-bold text-gray-900 mb-6">
                                 The newest business analytics platform
@@ -50,7 +44,6 @@ export default function Heromain() {
                                 />
                             </div>
                         </div>
-                        {/* ข้อความ */}
                         <div className="md:w-1/2">
                             <h1 className="text-4xl font-bold text-gray-900 mb-6">
                                 The newest business analytics platform

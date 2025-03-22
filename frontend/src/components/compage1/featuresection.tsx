@@ -7,7 +7,6 @@ export default function Featuressection() {
                 </h2>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    {/* Feature Card 1 */}
                     <div className="bg-white rounded-lg shadow-sm p-6">
                         <p className="text-gray-500 text-sm mb-3">22 June 2020</p>
                         <h3 className="font-bold text-xl mb-3">Sed ut perspiciatis unde omnis at vero blanditiis</h3>
@@ -21,7 +20,6 @@ export default function Featuressection() {
                         </div>
                     </div>
 
-                    {/* Feature Card 2 */}
                     <div className="bg-white rounded-lg shadow-sm p-6">
                         <p className="text-gray-500 text-sm mb-3">22 June 2020</p>
                         <h3 className="font-bold text-xl mb-3">Sed ut perspiciatis unde omnis at vero blanditiis</h3>
@@ -35,7 +33,6 @@ export default function Featuressection() {
                         </div>
                     </div>
 
-                    {/* Feature Card 3 */}
                     <div className="bg-white rounded-lg shadow-sm p-6">
                         <p className="text-gray-500 text-sm mb-3">22 June 2020</p>
                         <h3 className="font-bold text-xl mb-3">Sed ut perspiciatis unde omnis at vero blanditiis</h3>
