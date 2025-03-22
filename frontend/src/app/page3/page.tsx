@@ -5,7 +5,7 @@ import Usercomment3 from './../../components/compage3/usercomment3';
 import PricingSection3 from '../../components/compage3/pricingsection3';
 import BlogSection3 from './../../components/compage3/blogsection3';
 import HelpSection from '@/components/compage3/HelpSection';
-import Footer3 from '@/components/compage3/footer3';
+import Footer from '@/components/footer';
 export default function page() {
     return (
         <div>
@@ -15,7 +15,7 @@ export default function page() {
             <PricingSection3 />
             <BlogSection3 />
             <HelpSection />
-            <Footer3 />
+            <Footer/>
         </div>
     );
 }

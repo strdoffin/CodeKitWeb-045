@@ -1,4 +1,3 @@
-
 import {
   FacebookIcon,
   TwitterIcon,
@@ -6,6 +5,7 @@ import {
   YoutubeIcon,
   DribbbleIcon,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer3() {
   return (
@@ -42,7 +42,13 @@ export default function Footer3() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold">ENSOME</span>
+            <Image
+              src="/image/logo.svg"
+              alt="ENSOME Logo"
+              width={120}
+              height={40}
+              className="h-auto w-auto"
+            />{" "}
           </div>
           <p className="text-gray-400 text-sm mt-2">
             Quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
