@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Blogsectionmain() {
     return (
         <div>
-            <section className="bg-gray-50 py-20 h-[100vh]">
+            <section className="bg-gray-50 py-20">
                 <div className="max-w-6xl mx-auto px-6">
                     {/* Title */}
                     <h2 className="text-3xl font-bold text-gray-900 text-center">
