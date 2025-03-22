@@ -43,7 +43,7 @@ export default function Footer3() {
         <div>
           <div className="flex items-center space-x-2">
             <Image
-              src="/image/logo.svg"
+              src="/image/logo.webp"
               alt="ENSOME Logo"
               width={120}
               height={40}

@@ -52,22 +52,24 @@ export default function Home2Landing() {
                         </div>
                         <div>
                             <Image
-                                src="/image/group2.svg"
+                                src="/image/group2.webp"
                                 alt="Meeting"
                                 width={500}
                                 height={300}
                                 className="rounded-lg"
+                                priority
                             />
                         </div>
 
                         {/* Right Column */}
                         <div>
                             <Image
-                                src="/image/group1.svg"
+                                src="/image/group1.webp"
                                 alt="Team Discussion"
                                 width={500}
                                 height={300}
                                 className="rounded-lg"
+                                priority
                             />
                         </div>
                         <div className="flex flex-col gap-6">

@@ -8,21 +8,21 @@ const blogPosts = [
     id: 1,
     title: "Staffing software: key capabilities and top products",
     date: "22 June 2022",
-    image: "/image/notebook.svg", // เปลี่ยนเป็น path รูปจริง
+    image: "/image/notebook.webp", // เปลี่ยนเป็น path รูปจริง
     link: "#",
   },
   {
     id: 2,
     title: "2022 software development trends explained with benefits",
     date: "22 June 2022",
-    image: "/image/paper.svg",
+    image: "/image/paper.webp",
     link: "#",
   },
   {
     id: 3,
     title: "Business analysis helps you in finance",
     date: "22 June 2022",
-    image: "/image/team.svg",
+    image: "/image/team.webp",
     link: "#",
   },
 ];

@@ -14,7 +14,7 @@ export default function Home() {
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
                     <div className="w-full md:w-1/2">
                         <Image
-                            src="/image/001_illustration.svg"
+                            src="/image/001_illustration.webp"
                             alt=""
                             width={845}
                             height={518}
@@ -47,42 +47,42 @@ export default function Home() {
                     {/* Partner Logos */}
                     <div className="flex flex-wrap justify-center gap-4">
                         <Image
-                            src="/image/wildwood.svg"
+                            src="/image/wildwood.webp"
                             alt=""
                             width={185}
                             height={132}
                             className=""
                         />
                         <Image
-                            src="/image/applerush.svg"
+                            src="/image/applerush.webp"
                             alt=""
                             width={155}
                             height={102}
                             className=""
                         />
                         <Image
-                            src="/image/logo_3.svg"
+                            src="/image/logo_3.webp"
                             alt=""
                             width={155}
                             height={102}
                             className=""
                         />
                         <Image
-                            src="/image/av-group.svg"
+                            src="/image/av-group.webp"
                             alt=""
                             width={155}
                             height={102}
                             className=""
                         />
                         <Image
-                            src="/image/hard2ignore.svg"
+                            src="/image/hard2ignore.webp"
                             alt=""
                             width={155}
                             height={102}
                             className=""
                         />
                         <Image
-                            src="/image/fairtech.svg"
+                            src="/image/fairtech.webp"
                             alt=""
                             width={155}
                             height={102}
@@ -110,7 +110,7 @@ export default function Home() {
                             <div className="bg-white shadow-lg rounded-lg p-6">
                                 <div className="flex items-center justify-center h-12 w-12 bg-blue-100 rounded-lg">
                                     <Image
-                                        src="/image/01_icon_brain_circuit.svg"
+                                        src="/image/01_icon_brain_circuit.webp"
                                         alt=""
                                         width={42}
                                         height={42}
@@ -127,7 +127,7 @@ export default function Home() {
                             <div className="bg-white shadow-lg rounded-lg p-6">
                                 <div className="flex items-center justify-center h-12 w-12 bg-blue-100 rounded-lg">
                                     <Image
-                                        src="/image/02_icon_arrow_trending_lines.svg"
+                                        src="/image/02_icon_arrow_trending_lines.webp"
                                         alt=""
                                         width={42}
                                         height={42}
@@ -144,7 +144,7 @@ export default function Home() {
                             <div className="bg-white shadow-lg rounded-lg p-6">
                                 <div className="flex items-center justify-center h-12 w-12 bg-blue-100 rounded-lg">
                                     <Image
-                                        src="/image/03_icon_key.svg"
+                                        src="/image/03_icon_key.webp"
                                         alt=""
                                         width={42}
                                         height={42}
@@ -436,7 +436,7 @@ export default function Home() {
                         <div className="flex justify-between bg-blue-200">
                             <div>
                                 <Image
-                                    src="/image/logo_ensome.svg"
+                                    src="/image/logo_ensome.webp"
                                     alt=""
                                     width={150}
                                     height={49}

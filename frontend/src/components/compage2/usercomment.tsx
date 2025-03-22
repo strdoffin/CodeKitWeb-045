@@ -27,13 +27,13 @@ const testimonials = [
   {
     name: "Liam Smith",
     position: "CTO by InnovateX",
-    image: "/image/person2.svg",
+    image: "/image/person2.webp",
     text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
   },
   {
     name: "Emma Johnson",
     position: "Head of Design at Creatify",
-    image: "/image/person1.svg",
+    image: "/image/person1.webp",
     text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.",
   },
 ];
