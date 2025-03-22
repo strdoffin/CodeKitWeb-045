@@ -9,21 +9,21 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const blogPosts = [
     {
         id: 1,
-        title: "Staffing software: key capabilities and top products",
+        title: "ISO 13485 compliance of medical devices",
         date: "22 June 2022",
         image: "/image/notebook.webp",
         link: "#",
     },
     {
         id: 2,
-        title: "2022 software development trends explained with benefits",
+        title: "Business analysis helps you  in finance",
         date: "22 June 2022",
         image: "/image/paper.webp",
         link: "#",
     },
     {
         id: 3,
-        title: "Business analysis helps you in finance",
+        title: "5 web portal examples your business can learn from",
         date: "22 June 2022",
         image: "/image/team.webp",
         link: "#",
@@ -65,12 +65,10 @@ export default function BlogSection3() {
     };
 
     return (
-        <section className="container mx-auto px-6 md:px-16 lg:px-24 py-20 relative">
-            <div className="flex justify-between">
-                <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block mb-8">
-                    Ensome Blog
-                </h2>
-                <div className="flex space-x-5 items-center">
+        <section className="px-5 md:px-16 lg:px-60 py-20 relative">
+            <div className="flex justify-between items-center mb-8">
+                <h2 className="text-3xl font-bold">Our Blog</h2>
+                <div className=" space-x-4 hidden lg:flex">
                     <button
                         onClick={prevSlide}
                         className="p-3 bg-gray-200 rounded-full hover:bg-gray-300 transition"
@@ -86,7 +84,7 @@ export default function BlogSection3() {
                 </div>
             </div>
 
-            <div className="overflow-hidden">
+            <div className="overflow-hidden relative">
                 <div
                     className="flex transition-transform duration-500"
                     style={{ transform: `translateX(-${index * 100}%)` }}
@@ -95,36 +93,37 @@ export default function BlogSection3() {
                         (_, slideIndex) => (
                             <div
                                 key={slideIndex}
-                                className="grid grid-cols-3 gap-6 min-w-full p-10"
+                                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-w-full p-5"
                             >
                                 {blogPosts
                                     .slice(
                                         slideIndex * itemsPerPage,
                                         (slideIndex + 1) * itemsPerPage
                                     )
-                                    .map((post, idx) => (
+                                    .map((post) => (
                                         <motion.div
-                                            key={idx}
+                                            key={post.id}
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0, y: -20 }}
                                             transition={{ duration: 0.5 }}
-                                            className="bg-white rounded-lg overflow-hidden shadow-lg p-6"
+                                            className="bg-white rounded-lg overflow-hidden shadow-lg p-4"
                                         >
                                             <Image
                                                 src={post.image}
                                                 alt={post.title}
                                                 width={400}
                                                 height={250}
-                                                className="w-full object-cover"
+                                                className="w-full object-cover rounded-md"
                                             />
-                                            <div className="p-4 text-left">
+                                            <div className="p-4">
                                                 <p className="text-sm text-gray-500">
                                                     {post.date}
                                                 </p>
                                                 <h2 className="text-lg font-semibold mt-1">
                                                     {post.title}
                                                 </h2>
+                                                <p className="text-gray-400">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...</p>
                                                 <Link
                                                     href={post.link}
                                                     className="text-blue-600 font-medium mt-2 inline-flex items-center hover:underline"
@@ -138,6 +137,9 @@ export default function BlogSection3() {
                         )
                     )}
                 </div>
+            </div>
+            <div className="bg-blue-500 px-6 py-3 rounded-md text-white text-center gap-2 w-full lg:hidden">
+                <p>Learn more</p>
             </div>
         </section>
     );
