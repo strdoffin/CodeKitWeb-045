@@ -8,10 +8,12 @@ import Blanernum from "@/components/compage1/blanernum";
 import Contactsmain from "@/components/compage1/contantsmain";
 import Blanersend from "@/components/compage1/blanersend";
 import Footermain from "@/components/compage1/footermain";
+import Navbarmain from "@/components/compage1/navbarmain";
 
 export default function HomePage() {
     return (
         <div>
+            <Navbarmain />
             <Home1landing />
             <Sponser />
             <Blogsectionmain />

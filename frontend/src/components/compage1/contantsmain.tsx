@@ -35,8 +35,11 @@ export default function Contactsmain() {
                         </div>
                     </div>
 
+                    <button className="py-4 w-full rounded-lg bg-blue-500 text-white font-bold md:hidden">
+                        Contact Us
+                    </button>
                     {/* Right Column - Contact Form */}
-                    <div className="bg-white p-8 rounded-lg shadow-sm">
+                    <div className="bg-white p-8 rounded-lg shadow-sm hidden md:block">
                         <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h3>
 
                         <form className="space-y-6">
