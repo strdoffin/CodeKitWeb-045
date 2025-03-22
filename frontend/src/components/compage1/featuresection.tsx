@@ -52,7 +52,7 @@ export default function Featuressection() {
 
                 <div className="flex justify-center">
                     <button
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition duration-300">
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 w-full lg:w-fit">
                         Learn more
                     </button>
                 </div>
