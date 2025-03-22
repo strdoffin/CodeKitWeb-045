@@ -16,7 +16,7 @@ const benefits = [
 
 export default function Stats() {
   return (
-    <div className="container mx-auto px-4 gap-8 py-12">
+    <div className="container mx-auto px-24 gap-8 py-40">
       {/* Statistics Section */}
       <div className="col-span-12 space-y-6 pb-24">
         <h2 className="text-2xl font-bold border-b-4 border-blue-600 inline-block ml-7">
