@@ -62,7 +62,7 @@ export default function PricingSection() {
 
       {/* Pricing Grid */}
       <div className="grid md:grid-cols-3 gap-6">
-        {plans.map((plan, index) => (
+        {plans.map((plan) => (
           <motion.div
             key={plan.name}
             initial={{ opacity: 0, y: 20 }}
