@@ -322,32 +322,85 @@ export default function Home() {
             </section>
 
             {/* Contact Section */}
-            <section className="py-20 text-center">
-                <h2 className="text-2xl font-bold">Left questions? Contact us now</h2>
-                <div className="mt-6 flex flex-wrap justify-center gap-6">
-                    <div className="bg-white p-6 rounded-lg shadow-md max-w-md">
-                        <p className="text-gray-600">Email: example@info.com</p>
-                        <p className="text-gray-600">Phone: +1 601-201-5580</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md max-w-md">
-                        <form>
-                            <input type="text" placeholder="Your Name" className="w-full mb-4 p-2 border rounded" />
-                            <input type="email" placeholder="Your Email" className="w-full mb-4 p-2 border rounded" />
-                            <textarea placeholder="Your Message" className="w-full p-2 border rounded"></textarea>
-                            <button className="mt-4 bg-blue-500 text-white py-2 px-6 rounded">Send</button>
-                        </form>
+            <section className="py-20 bg-blue-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid md:grid-cols-2 gap-10 items-center">
+                        {/* Left Column - Contact Information */}
+                        <div className="space-y-8">
+                            <div>
+                                <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                                    Left questions? Contacts us now for a free consultation and free trial!
+                                </h2>
+                                <p className="text-gray-600 mb-8">
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                                    ut aliquid ex ea commodi.
+                                </p>
+                            </div>
+
+                            <div className="space-y-6">
+                                <div>
+                                    <p className="text-gray-500 text-sm mb-1">Email address</p>
+                                    <p className="text-gray-800 font-medium">ensome@info.co.us</p>
+                                </div>
+
+                                <div>
+                                    <p className="text-gray-500 text-sm mb-1">Phone number</p>
+                                    <p className="text-gray-800 font-medium">+1601-201-5580</p>
+                                </div>
+
+                                <div>
+                                    <p className="text-gray-500 text-sm mb-1">Address</p>
+                                    <p className="text-gray-800 font-medium">1642 Washington Avenue, Jackson, MS, Mississippi, 39201
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Column - Contact Form */}
+                        <div className="bg-white p-8 rounded-lg shadow-sm">
+                            <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h3>
+
+                            <form className="space-y-6">
+                                <div>
+                                    <label htmlFor="name" className="block text-gray-500 text-sm mb-2">Name</label>
+                                    <input type="text" id="name"
+                                        className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                                        placeholder="Andrea" />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="email" className="block text-gray-500 text-sm mb-2">Email</label>
+                                    <input type="email" id="email"
+                                        className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                                        placeholder="andrea@gmail.com" />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="theme" className="block text-gray-500 text-sm mb-2">Theme</label>
+                                    <input type="text" id="theme"
+                                        className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                                        placeholder="Job" />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="message" className="block text-gray-500 text-sm mb-2">Message</label>
+                                    <input type="text" id="message"
+                                        className="w-full px-3 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                                        placeholder="Your message" />
+                                </div>
+
+                                <button type="submit"
+                                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition duration-300">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Footer Section */}
-            <footer className="bg-blue-500 text-white py-10 text-center">
-                <h2 className="text-xl font-bold">Subscribe to our newsletter</h2>
-                <form className="mt-4 flex justify-center">
-                    <input type="email" className="px-4 py-2 rounded-l-lg text-black" placeholder="Your email" />
-                    <button className="bg-black px-6 py-2 rounded-r-lg">Send</button>
-                </form>
-            </footer>
+            
         </div>
     </div>
   );
