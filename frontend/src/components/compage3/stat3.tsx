@@ -84,20 +84,6 @@ export default function Stat3() {
                     </div>
                 </div>
             </div>
-            {/* <div className="w-full flex items-center justify-center px-60 py-32 bg-[#F1F6FA]">
-                <div className="pr-16">
-                    <p className="text-4xl font-bold mb-10 ">
-                        The benefits of Ensome{" "}
-                    </p>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                </div>
-                
-            </div> */}
         </div>
     );
 }

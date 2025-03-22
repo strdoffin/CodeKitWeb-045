@@ -3,7 +3,6 @@ export default function Contactsmain() {
         <section className="py-20 bg-blue-50">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-10 items-center">
-                    {/* Left Column - Contact Information */}
                     <div className="space-y-8">
                         <div>
                             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -37,7 +36,6 @@ export default function Contactsmain() {
                     <button className="py-4 w-full rounded-lg bg-blue-500 text-white font-bold md:hidden">
                         Contact Us
                     </button>
-                    {/* Right Column - Contact Form */}
                     <div className="bg-white p-8 rounded-lg shadow-sm hidden md:block">
                         <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h3>
 

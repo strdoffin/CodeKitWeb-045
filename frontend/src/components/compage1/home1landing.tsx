@@ -4,7 +4,6 @@ export default function Home1landing() {
     return (
         <div className="">
             <section className="relative text-white py-16 px-6 md:px-12">
-                {/* Hero Content */}
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
                     <div className="w-full md:w-1/2">
                         <Image
@@ -15,7 +14,6 @@ export default function Home1landing() {
                             className="rounded-lg"
                         />
                     </div>
-                    {/* Text Section */}
                     <div className="w-full md:w-1/2">
                         <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black">
                             Find true power in your data with <span className="text-blue-400">Ensome</span>

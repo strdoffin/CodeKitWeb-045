@@ -7,7 +7,6 @@ export default function ContactSection() {
   return (
     <section className="container mx-auto px-6 md:px-12 lg:px-24 py-20">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
-        {/* Contact Info */}
         <div className="max-w-md mx-auto xl:mx-0">
           <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block mb-4">
             Contact information
@@ -29,7 +28,6 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 max-w-lg mx-auto xl:mx-0 w-full">
           <div>
             <label className="block text-sm text-gray-500">Name</label>

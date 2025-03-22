@@ -4,7 +4,6 @@ import { ChevronDown, FacebookIcon, LinkedinIcon, TwitterIcon, YoutubeIcon, Drib
 import Link from "next/link";
 import { useState } from "react";
 
-// Create an array with the actual icon components
 const socialMedia = [
   { name: "Facebook", icon: FacebookIcon },
   { name: "Twitter", icon: TwitterIcon },
@@ -32,7 +31,6 @@ const service = [
     {name:"Site map"},
 ];
 
-// Contact info data
 const contactInfo = [
     {name: "Email", value: "ensome@info.co.us"},
     {name: "Phone", value: "+1 601-201-5580"},
