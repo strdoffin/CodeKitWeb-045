@@ -24,10 +24,11 @@ export default function Home3landing() {
             <div className="w-full">
                 <Image
                     className="w-full"
-                    src={"/page3/bg1.svg"}
+                    src={"/page3/bg1.webp"}
                     alt="bg"
                     width={100}
                     height={10}
+                    priority
                 />
             </div>
             <div className="container mx-auto px-6 lg:px-20 py-20 flex items-center justify-center">
@@ -53,10 +54,11 @@ export default function Home3landing() {
                 <div className="">
                     <Image
                         className="w-full"
-                        src={"/page3/bg2.svg"}
+                        src={"/page3/bg2.webp"}
                         alt="bg2"
                         width={120}
                         height={10}
+                        priority
                     />
                 </div>
                 <div className=" flex flex-col justify-center p-12">
