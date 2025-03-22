@@ -34,7 +34,7 @@ export default function PricingSection() {
   const [billing, setBilling] = useState("monthly");
 
   return (
-    <section className="container mx-auto px-4 py-12">
+    <section className="container mx-auto px-24 py-40">
       {/* Title + Toggle Button */}
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block">
