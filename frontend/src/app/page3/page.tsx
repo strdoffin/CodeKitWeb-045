@@ -15,7 +15,7 @@ export default function page() {
             <PricingSection3 />
             <BlogSection3 />
             <HelpSection />
-            {/* <Footer/> */}
+            <Footer />
         </div>
     );
 }
