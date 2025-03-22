@@ -9,21 +9,16 @@ const testimonials = [
   {
     name: "Alex Bern",
     position: "CEO by PixelPerfect",
-    image: "/images/alex.jpg",
-    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    image: "/image/person2.svg",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” ",
   },
   {
     name: "Ruben Chifundo",
     position: "CEO by NOX",
-    image: "/images/ruben.jpg",
-    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    image: "/image/person1.svg",
+    text: "“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” ",
   },
-  {
-    name: "Yossawat Imjai",
-    position: "CEO by EOS",
-    image: "/images/ruben.jpg" ,
-    text: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-  },
+  
 ];
 
 export default function UserComment() {
