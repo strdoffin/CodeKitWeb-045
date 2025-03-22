@@ -6,8 +6,26 @@ import {
 } from "lucide-react";
 export default function Stat3() {
     return (
-        <div>
-            <div className="w-full flex items-center justify-center px-60 py-32 bg-[#F1F6FA]">
+        <div className="px-5 lg:px-60">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div className="flex justify-end">
+                    <div className="w-full lg:max-w-md ">
+                        <p className="text-4xl font-bold mb-10 ">
+                            The benefits of Ensome{" "}
+                        </p>
+                        <p className="text-gray-400">
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae.
+                        </p>
+                    </div>
+                </div>
+                <div className="">
+
+                </div>
+            </div>
+            {/* <div className="w-full flex items-center justify-center px-60 py-32 bg-[#F1F6FA]">
                 <div className="pr-16">
                     <p className="text-4xl font-bold mb-10 ">
                         The benefits of Ensome{" "}
@@ -81,7 +99,7 @@ export default function Stat3() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
