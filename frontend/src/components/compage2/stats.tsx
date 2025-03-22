@@ -19,7 +19,7 @@ export default function Stats() {
     <div className="container mx-auto px-24 gap-8 py-40">
       {/* Statistics Section */}
       <div className="col-span-12 space-y-6 pb-24">
-        <h2 className="text-2xl font-bold border-b-4 border-blue-600 inline-block ml-7">
+        <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block ml-7">
           Ensome in numbers
         </h2>
         <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

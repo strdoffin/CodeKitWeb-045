@@ -33,10 +33,10 @@ export default function Home2Landing() {
 
                 {/* Content Section */}
                 <div className="bg-white text-black py-20">
-                    <div className="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+                    <div className="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center ">
                         {/* Left Column */}
-                        <div className="flex flex-col gap-6">
-                            <h2 className="text-3xl font-bold">
+                        <div className="flex flex-col gap-6 ">
+                            <h2 className="text-3xl font-bold ">
                                 The newest business analytics platform
                             </h2>
                             <p className="text-gray-600">

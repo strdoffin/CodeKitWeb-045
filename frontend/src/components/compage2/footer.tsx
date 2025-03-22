@@ -63,7 +63,7 @@ export default function Footer() {
               <YoutubeIcon className="text-[#0B253A] hover:text-white w-6 h-6" />
             </div>
             <div className="bg-white p-2 rounded-full hover:bg-[#0B253A] transition-colors duration-200 cursor-pointer">
-              <DribbbleIcon className="text-[#0B253A] hover:text-white w-6 h-6" />
+              <DribbbleIcon className="text-[#0B253A] hover:text-white w-6 h-6 " />
             </div>
           </div>
         </div>
