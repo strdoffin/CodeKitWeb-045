@@ -47,10 +47,24 @@ export default function page() {
                         <p>Discover more</p>
                     </div>
                 </div>
-                <div className="w-full grid">
-
+            </div>
+            <div className="w-full flex">
+                <div className="">
+                    <Image className="w-full" src={'/page3/bg2.svg'} alt="" width={120} height={10} />
+                </div>
+                <div className="flex flex-col items-start gap-4 w-1/3">
+                    <p className="mt-4 text-gray-300">
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto.
+                    </p>
+                    <div className="bg-blue-500 px-6 py-3 rounded-md text-white gap-2 ">
+                        <p>Discover more</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     );
 }
