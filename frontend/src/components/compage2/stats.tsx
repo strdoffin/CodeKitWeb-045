@@ -48,7 +48,7 @@ export default function Stats() {
 
         {/* Benefits Section */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold border-b-4 border-blue-600 inline-block">
+          <h2 className="text-3xl font-bold border-b-4 border-blue-600 inline-block">
             The benefits of Ensome
           </h2>
           <div className="space-y-6">
