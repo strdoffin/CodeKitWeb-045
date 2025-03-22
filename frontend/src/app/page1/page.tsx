@@ -1,4 +1,5 @@
 import { CirclePlay } from "lucide-react"
+import { MoveRight } from "lucide-react"
 import Image from 'next/image';
 import Navbar from "@/components/navbar"
 import Usercomment from './../../components/compage1/usercomment';
@@ -482,27 +483,57 @@ export default function Home() {
                             </div>
                         </div>
 
-                        {/* doisand  */}
-
                         <div className="mt-10 pt-6 border-t border-gray-200">
-                            
+
                         </div>
 
                         {/* Social media section */}
-                        <div className="flex">
-                            <div>
-                                
+
+
+                        <div className="flex w-full mt-3">
+                            <div className="w-1/2">
+                            <p className="font-bold text-black">Contacts</p>
+                                <div className="flex mt-3">
+                                    <div id="3">
+                                        <div>
+                                            <ul>
+                                                <li>1642 Washington Avenue, Jackson, MS, 39201</li>
+                                                <div className="flex items-center">
+                                                    <li className="flex items-center gap-1">
+                                                        ensome@info.co.us
+                                                        <span className="text-gray-800"><MoveRight size={20} /></span>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="3">
+                                        <div>
+                                            <ul>
+                                                <li>1642 Washington Avenue, Jackson, MS, 39201</li>
+                                                <div className="flex items-center">
+                                                    <li className="flex items-center gap-1">
+                                                        ensome@info.co.us
+                                                        <span className="text-gray-800"><MoveRight size={20} /></span>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className=" space-y-6">
-                                <h3 className="text-lg font-medium">Social</h3>
-                                <div className="flex flex-wrap gap-4">
-                                    {/* Placeholder divs for social icons */}
-                                    <div className="w-8 h-8 rounded-full bg-blue-500"></div>
-                                    <div className="w-8 h-8 rounded-full bg-blue-400"></div>
-                                    <div className="w-8 h-8 rounded-full bg-blue-600"></div>
-                                    <div className="w-8 h-8 rounded-full bg-red-500"></div>
-                                    <div className="w-8 h-8 rounded-full bg-gray-500"></div>
-                                    <div className="w-8 h-8 rounded-full bg-blue-300"></div>
+                            <div className="w-1/2 space-y-6 flex justify-end">
+                                <div className="">
+                                    <h3 className="text-lg font-medium">Social</h3>
+                                    <div className="flex flex-wrap gap-4 ju mt-3">
+                                        {/* Placeholder divs for social icons */}
+                                        <div className="w-8 h-8 rounded-full bg-blue-500"></div>
+                                        <div className="w-8 h-8 rounded-full bg-blue-400"></div>
+                                        <div className="w-8 h-8 rounded-full bg-blue-600"></div>
+                                        <div className="w-8 h-8 rounded-full bg-red-500"></div>
+                                        <div className="w-8 h-8 rounded-full bg-gray-500"></div>
+                                        <div className="w-8 h-8 rounded-full bg-blue-300"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
