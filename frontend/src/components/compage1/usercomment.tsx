@@ -36,8 +36,8 @@ export default function UserComment() {
     <div className="container mx-auto px-4 py-12 relative">
       {/* Title + Navigation */}
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-2xl font-bold border-b-4 border-blue-600 inline-block">
-          What our customers say
+        <h2 className="text-2xl font-bold inline-block">
+          Trusted by the best in the business
         </h2>
         <div className="flex space-x-2">
           <button
