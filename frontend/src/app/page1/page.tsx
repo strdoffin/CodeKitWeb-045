@@ -1,5 +1,3 @@
-
-
 import { CirclePlay } from "lucide-react"
 import Image from 'next/image';
 import Navbar from "@/components/navbar"
